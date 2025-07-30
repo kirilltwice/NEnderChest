@@ -1,0 +1,63 @@
+itemsDatabase: "MySQL"
+playersDatabase: "MySQL"
+
+host: "localhost"
+port: 3306
+username: "root"
+password: "root"
+itemsTable: "itemsTable"
+playersTable: "playersTable"
+
+shopMenuName: "&5Улучшение"
+enderMenuName: "&5ЭндерСундук"
+shopRowsName: "&5Уровни"
+
+buyPreviousRow: "&6ЭндерСундук &7» &cДля покупки купите предыдущую строку!!"
+unlockedRow: "&6ЭндерСундук &7» &cЭта строка уже разблокирована!"
+clearedSuccessfully: "&6ЭндерСундук &7» &cБазы данных плагина ПОЛНОСТЬЮ были очищены!"
+withoutPermission: "&6ЭндерСундук &7» &fУ вас нет прав на использование данной команды!"
+giveUsage: "&6ЭндерСундук &7» &fИспользуйте: /nEnderChest give <Ник> <Время>"
+playerDontOnline: "&6ЭндерСундук &7» &cИгрок не в сети!"
+enderChestLimit: "&6ЭндерСундук &7» &cУ игрока максимальный уровень эндер-сундука!"
+possibleTypes: "&6ЭндерСундук &7» &cДоступные типы: WIPE, FOREVER!"
+givedSuccessfully: "&6ЭндерСундук &7» &aВы расширили Эндер-Сундук игрока %target%! Теперь его размер: %size%"
+wipedSuccessfully: "&6ЭндерСундук &7» &cБазы данных были вайпнуты!"
+checkUsage: "&6ЭндерСундук &7» &fИспользуйте: /nEnderChest check <Ник>"
+withoutEnderChest: "&6ЭндерСундук &7» &cУ игрока не обнаружен эндер-сундук"
+notEnoughMoney: "&6Юрка чумакоф проста ебанутый"
+reloaded: "&aПерезагружено"
+buyedSuccessfully: "&aКупил!"
+inPvp: "&cТы в пвп!"
+
+interactCommand: "nEnderchest open"
+backCommand: "ec"
+backItemModelData: 10001
+backItemName: "&6Назад"
+backItemLore:
+  - "Кликни для возвращения назад!"
+backItemSlot: 10
+backMaterial: "ARROW"
+forWipeMaterial: "EMERALD"
+buyForWipeName: "На вайп"
+buyForeverName: "Навсегда"
+foreverMaterial: "EMERALD"
+buyForWipeSlot: 0
+
+buyForeverSlot: 1
+buyForWipeLore:
+  - "На целый вайп"
+  - "Цена 666 Риликов"
+buyForeverLore:
+  - "Навсегда"
+  - "Цена 777 Риликов"
+buyForWipePrice: 666
+buyForeverPrice: 777
+
+buyedItemName: "&6%row% Строка"
+buyedItemLore:
+  - "Кончится через: %time%"
+unbuyedItemName: "&6%row% Строка"
+unbuyedItemLore:
+  - "Приобретите для разблокировки!"
+leftForever: "&cНикогда"
+leftWipe: "&eВ следующем вайпе"
