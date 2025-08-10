@@ -40,6 +40,19 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.38</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
         </plugins>
         <resources>
             <resource>
@@ -66,7 +79,15 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
-
+        <repository>
+            <id>rosewood-repo</id>
+            <url>https://repo.rosewooddev.io/repository/public/</url>
+        </repository>
+        <repository>
+            <id>reposilite-repository-releases</id>
+            <name>Reposilite Repository</name>
+            <url>https://repo.panda-lang.org/releases</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -79,23 +100,30 @@
         <dependency>
             <groupId>org.black_ixx</groupId>
             <artifactId>playerpoints</artifactId>
-            <version>3.2.5</version>
-            <scope>system</scope>
-            <systemPath>C:/Users/danse/Downloads/PlayerPoints.jar</systemPath>
+            <version>3.3.2</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.retrooper</groupId>
-            <artifactId>packetevents-PLATFORM</artifactId>
-            <version>2.7.0</version>
-            <scope>system</scope>
-            <systemPath>C:/Users/danse/Downloads/packetevents-spigot-2.7.0.jar</systemPath>
+            <artifactId>packetevents-spigot</artifactId>
+            <version>2.9.3</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>ru.leymooo</groupId>
-            <artifactId>antirelog</artifactId>
-            <version>1.0.0</version>
-            <scope>system</scope>
-            <systemPath>C:/Users/danse/OneDrive/Рабочий стол/NColiseum/libs/antirelog.jar</systemPath>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>7.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.rollczi</groupId>
+            <artifactId>litecommands-bukkit</artifactId>
+            <version>3.10.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.38</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

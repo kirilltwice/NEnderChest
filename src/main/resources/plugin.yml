@@ -1,9 +1,14 @@
 name: NEnderChest
-version: '${project.version}'
 main: wtf.n1zamu.NEnderChest
+
+author: [ n1zamu, Twice]
+
+version: '${project.version}'
 api-version: '1.16'
+
 commands:
   nEnderChest:
+
 permissions:
   nEnderChest:
     give:
